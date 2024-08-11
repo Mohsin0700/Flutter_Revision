@@ -78,5 +78,4 @@ print("Example of NOT operators");
 print(!condition1);
 print(!condition2);
 print(!condition03);
-
 }
