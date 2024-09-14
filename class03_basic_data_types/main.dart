@@ -32,9 +32,14 @@ void main(){
   // print(age3.isNegative);
   // print(age3.isNaN);
 
-  // double percentage1 = 60;
+  // double percentage1 = 60.00;
   // int percentage2 = 60;
-  // print(percentage1.compareTo(percentage2));
+  // int result = percentage1.compareTo(percentage2);
+  // if(result == 0) {
+  //   print("True");
+  // } else if(result == -1) {
+  //   print(false);
+  // }
   // int num1 = 13;
   // int num2 = 11;
   // int result = num1.remainder(num2);
@@ -56,7 +61,7 @@ void main(){
   // // int result = num1 + num2; //  In-Correct
   // print(result);
   // *******************************************Booleans***********************************************************
-  bool res = 10 > 5;
-  print(res);
+  // bool res = 10 > 5;
+  // print(res);
 
 }

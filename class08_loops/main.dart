@@ -9,4 +9,16 @@ void main(){
   for(var i in students) {
     print(i.length);
   }
+  // While Loop
+  int num1 = 1;
+  while(num1 < 5){
+    print("Hello World");
+    print("Line break");
+    num1++;
+  }
+
+  bool isLoggedIn = false;
+  do {
+    print("This is a do while loop which will run definitly for once");
+  } while(isLoggedIn == true);
 }
