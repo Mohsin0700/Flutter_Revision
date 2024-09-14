@@ -6,7 +6,7 @@ void main(){
   // so in this case if want to change any value from string to integer we can't, it will throw an error.
   // names[2] = 5;
   // therefore we use List keywor explicitly to create a list which accept all data types
-  List data = ["Mohsin", "26", true];
+  List data = ["Mohsin", 26, true];
   data[1] = 27;
   print(data);
 
@@ -14,6 +14,8 @@ void main(){
   
   //we can also create list of different specific types, If we want to create a list of type string which only accept string and do not accept any other type like int,bool or double. so we will create it as
   List<String> studentNames = ["Mohsin", "Arbab", "Ali", "Hasan"];
+  // OR
+  List studentNames2 = <String>["Mohsin", "Arbab", "Ali", "Hasan"];
   // Now this list will not accept any other data type.
   // studentNames[3] = false;
   //we can have lists of different data types
