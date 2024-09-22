@@ -19,7 +19,7 @@ printStudentDetails(String name, num age) {
 // Named and optioanl parameters
 // CASE A
 // printTeacherDetails({required String name, String? qualification}) {
-// The expression I have used in below statement is called null safety to avoid error in app.
+// The expression I have used in above statement is called null safety to avoid error in app.
 // We can also set some default value in parameter
 // CASE B
 printTeacherDetails({required String name, String qualification = "BA"}) {
