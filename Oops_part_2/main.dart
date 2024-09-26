@@ -68,40 +68,64 @@
 
 // *******************************************************************************************
 // ****************************************MIXINS*********************************************
+// void main() {
+//   Duck obj1 = Duck("Duck");
+//   Fish obj2 = Fish("Fish");
+//   Eagle obj3 = Eagle("Eagle");
+
+//   obj1.swim(obj1.name);
+//   obj1.fly(obj1.name);
+//   obj2.swim(obj2.name);
+//   obj3.fly(obj3.name);
+// }
+
+// mixin Swimming {
+//   void swim(String name) {
+//     print("$name can swim");
+//   }
+// }
+
+// mixin Flying {
+//   void fly(String name) {
+//     print("$name can fly");
+//   }
+// }
+
+// class Duck with Swimming, Flying {
+//   late String name;
+//   Duck(this.name);
+// }
+
+// class Fish extends Duck with Swimming {
+//   late String name;
+//   Fish(this.name) : super(name);
+// }
+
+// class Eagle extends Duck with Flying {
+//   late String name;
+//   Eagle(this.name) : super(name);
+// }
+// *******************************************************************************************
+// *************************************Polymorphysm******************************************
 void main() {
-  Duck obj1 = Duck("Duck");
-  Fish obj2 = Fish("Fish");
-  Eagle obj3 = Eagle("Eagle");
-
-  obj1.swim(obj1.name);
-  obj1.fly(obj1.name);
-  obj2.swim(obj2.name);
-  obj3.fly(obj3.name);
+  Student obj1 = Student();
+  obj1.showInfo();
 }
 
-mixin Swimming {
-  void swim(String name) {
-    print("$name can swim");
+class Person {
+  showInfo() {
+    print("Main class function called");
   }
 }
 
-mixin Flying {
-  void fly(String name) {
-    print("$name can fly");
+class Student extends Person {
+  @override
+  showInfo() {
+    super.showInfo();
+    print("Child class function called");
   }
 }
-
-class Duck with Swimming, Flying {
-  late String name;
-  Duck(this.name);
-}
-
-class Fish extends Duck with Swimming {
-  late String name;
-  Fish(this.name) : super(name);
-}
-
-class Eagle extends Duck with Flying {
-  late String name;
-  Eagle(this.name) : super(name);
-}
+// *****************************************************************************************
+//***********************************Encapsulation******************************************
+// Dart provide file level encapsulation which mean if both classes are in same file they can access their private properties/attributes/methods
+// To achieve encapsulation in dart we can use private keys which is underscore and we can create getters and setters
