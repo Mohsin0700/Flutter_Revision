@@ -1,4 +1,5 @@
-void main(){
+void main() {
+  print("Working");
   // *******************************************Strings***********************************************************
   // print("Hello world");
   // String myName;
@@ -10,7 +11,7 @@ void main(){
   // int age = 26;
   // print(age);
   // double percentage1 = 76.3;
-  
+
   // int percentage2 = percentage1.round();  // round to nearby number...forward if greater than or equal to 5, backward if less than 5
   // int percentage3 = percentage1.floor();  // round to backward number, doesnot matter what the decimal number is
   // int percentage4 = percentage1.ceil();   // round to upward, does'nt matter what the number is
@@ -35,9 +36,9 @@ void main(){
   // double percentage1 = 60.00;
   // int percentage2 = 60;
   // int result = percentage1.compareTo(percentage2);
-  // if(result == 0) {
-  //   print("True");
-  // } else if(result == -1) {
+  // if (result == 0) {
+  //   print(true);t
+  // } else {
   //   print(false);
   // }
   // int num1 = 13;
@@ -51,7 +52,7 @@ void main(){
   // print(num3);
   // print(num4);
 
-  // double percentage = 50.71;
+  // double percentage = 50.713254;
   // print(percentage.truncate());
 
   // int num1 = 2;
@@ -63,5 +64,4 @@ void main(){
   // *******************************************Booleans***********************************************************
   // bool res = 10 > 5;
   // print(res);
-
 }
